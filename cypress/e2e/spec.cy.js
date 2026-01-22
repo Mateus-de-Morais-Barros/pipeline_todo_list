@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 describe('Todo App', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000')
+    cy.visit('/')
   })
 
   it('deve adicionar uma nova tarefa', () => {
@@ -23,4 +23,4 @@ describe('Todo App', () => {
     
     cy.get('.my-2').should('not.exist')
   })
-})
+});
